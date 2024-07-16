@@ -12,4 +12,15 @@ vectorizer = TfidfVectorizer()
 
 vectorizer_data = vectorizer.fit_transform(data["title"])
 
-print(vectorizer_data)
+new_paper = "Efficient algorithms for large-scale machine learning."
+vectorizer_new_paper = vectorizer.transform({new_paper})
+
+similarity_papers = cosine_similarity(vectorizer_data,vectorizer_new_paper).flatten()
+
+indice_papers = similarity_papers.argsort()[:-5][::-1]
+
+similarity_papers = data.iloc[indice_papers]
+
+print("Les papiers les plus similaires sont :")
+print(similarity_papers['title'])
+

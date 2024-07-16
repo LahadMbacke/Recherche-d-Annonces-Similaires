@@ -1,4 +1,3 @@
-import pandas as pd
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
@@ -8,7 +7,6 @@ nltk.download("punkt")
 nltk.download("stopwords")
 nltk.download("wordnet")
 
-data = pd.read_csv("data/data.csv")
 
 
 stop_words = set(stopwords.words("english"))
@@ -23,5 +21,3 @@ def data_process(text):
     return " ".join(tokens)
 
 
-data["title"] = data["title"].apply(data_process)
-print(data["title"])
