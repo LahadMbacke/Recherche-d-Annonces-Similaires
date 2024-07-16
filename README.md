@@ -1,7 +1,7 @@
 # Document Similarity Finder
 
 
-## Ce projet est conçu pour trouver et afficher des documents similaires à un titre de document donné. Il utilise des techniques d'apprentissage automatique et de traitement du langage naturel pour analyser et comparer les titres de documents en termes de similarité.
+# Ce projet est conçu pour trouver et afficher des documents similaires à un titre de document donné. Il utilise des techniques d'apprentissage automatique et de traitement du langage naturel pour analyser et comparer les titres de documents en termes de similarité.
 
 ## Fonctionnalités
 - **Entrée du titre**: Les utilisateurs peuvent entrer le titre d'un document qu'ils souhaitent trouver des documents similaires.
